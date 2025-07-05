@@ -16,7 +16,7 @@ void SineWave::process(juce::AudioBuffer<float>& buffer)
         for (int sample = 0; sample < buffer.getNumSamples(); ++sample)
         {
             float outSample = amplitude * std::sinf(juce::MathConstants<float>::twoPi * frequency * currentTime);
-x            output[sample] = outSample;
+            output[sample] = outSample;
             currentTime = currentTime + timeIncrement;
         }
     }
